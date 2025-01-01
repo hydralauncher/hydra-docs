@@ -11,6 +11,12 @@
 We highly recommend you to be double sure that you are running Python 3.9. `libtorrent` is known to have some issues with higher Python versions.
 :::
 
+### Additional step for Windows
+
+If you are on Windows, you have to install [OpenSSL 1.1](https://slproweb.com/download/Win64OpenSSL-1_1_1w.exe) which is required by `libtorrent`.
+
+## Cloning the repository
+
 After having all of the prerequisites installed, you should be ready to clone Hydra:
 
 ```bash
@@ -44,11 +50,13 @@ The user accounts are not shared between environments. Which means that the acco
 
 You have to set up a few variables in order to select which environment you are going to use. Hydra won't work without those.
 
-| Variable name            | Value for production                      | Value for staging                         |
-| ------------------------ | ----------------------------------------- | ----------------------------------------- |
-| `MAIN_VITE_API_URL`      | https://hydra-api-us-east-1.losbroxas.org | https://api-staging.hydralauncher.gg      |
-| `MAIN_VITE_AUTH_URL`     | https://auth.hydralauncher.gg             | https://auth-staging.hydralauncher.gg     |
-| `MAIN_VITE_CHECKOUT_URL` | https://checkout.hydralauncher.gg         | https://checkout-staging.hydralauncher.gg |
+| Variable name                          | Value for production                      | Value for staging                         |
+| -------------------------------------- | ----------------------------------------- | ----------------------------------------- |
+| `MAIN_VITE_API_URL`                    | https://hydra-api-us-east-1.losbroxas.org | https://api-staging.hydralauncher.gg      |
+| `MAIN_VITE_AUTH_URL`                   | https://auth.hydralauncher.gg             | https://auth-staging.hydralauncher.gg     |
+| `MAIN_VITE_CHECKOUT_URL`               | https://checkout.hydralauncher.gg         | https://checkout-staging.hydralauncher.gg |
+| `MAIN_VITE_EXTERNAL_RESOURCES_URL`     | https://assets.hydralauncher.gg           | `None`                                    |
+| `RENDERER_VITE_EXTERNAL_RESOURCES_URL` | https://assets.hydralauncher.gg           | `None`                                    |
 
 Pick one environment to use and place the variables into a `.env` file in the root folder of the project. Like so:
 
@@ -58,6 +66,8 @@ Pick one environment to use and place the variables into a `.env` file in the ro
 MAIN_VITE_API_URL=https://hydra-api-us-east-1.losbroxas.org
 MAIN_VITE_AUTH_URL=https://auth.hydralauncher.gg
 MAIN_VITE_CHECKOUT_URL=https://checkout.hydralauncher.gg
+MAIN_VITE_EXTERNAL_RESOURCES_URL=https://assets.hydralauncher.gg
+RENDERER_VITE_EXTERNAL_RESOURCES_URL=https://assets.hydralauncher.gg
 ```
 
 ### Which environment should you use?
