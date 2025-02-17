@@ -17,6 +17,7 @@ export default defineConfig({
         items: [
           { text: "Getting started", link: "/getting-started" },
           { text: "Download sources", link: "/download-sources" },
+          { text: "Custom themes", link: "/themes" },
         ],
       },
     ],
