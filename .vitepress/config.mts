@@ -24,7 +24,9 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/hydralauncher/hydra-docs" },
       { icon: "x", link: "https://x.com/hydralauncher" },
+      { icon: "tiktok", link: "https://tiktok.com/@hydralauncher" },
       { icon: "telegram", link: "https://t.me/hydralauncher" },
+      { icon: "reddit", link: "https://reddit.com/r/hydralauncher/" },
     ],
   },
 });
