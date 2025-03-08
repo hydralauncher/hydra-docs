@@ -100,7 +100,7 @@ For this, you will need to:
 
 ### Fork the hydra-themes repository
 
-Begin logged in to your GitHub account, you can go to the Hydra Themes [fork page](https://github.com/hydralauncher/hydra-themes/fork)
+Being logged in to your GitHub account, you can go to the Hydra Themes [fork page](https://github.com/hydralauncher/hydra-themes/fork)
 
 Create the fork and then clone it into your machine.
 
@@ -108,7 +108,14 @@ You can clone your fork with the git clone command: `git clone https://github.co
 
 ### Create the folder and files for your theme
 
-Now you need to create your theme inside the project. Here I opened the project folder using Visual Studio Code, created the folder "My Awesome Theme-RB5gxMjb" inside the "themes" folder and added a screenshot of the theme and the .css file containing all the code that I wrote inside the launcher
+Now you need to create your theme inside the project. Here I opened the project folder using Visual Studio Code, created the folder "My Awesome Theme-\<my friend code>" inside the "themes" folder and added a screenshot of the theme and the .css file containing all the code that I wrote inside the launcher.
+
+Things to note:
+
+- The name of the screenshot file must be `screenshot` and the extension of file the must be one of the following: `png, webp, jpg, jpeg, avif, heic, heif`.
+- The extension of the css file must be `.css`.
+- You must add your friend code to the folder name. Pull Requests that don't have a friend code, or that have a friend code that don't belong to you, will not be accepted.
+- You must not change any other files that don't belong to your theme.
 
 ![Visual Studio code with hydra-theme repository](images/hydra-theme-project.png)
 
@@ -131,4 +138,4 @@ Now you need to create your theme inside the project. Here I opened the project 
 
 The Hydra team will review your theme and check if it follows the rules of creating a theme
 
-If everything is good, your PR will be approved and in a few minutes it should be available in the store!
+If everything is good, your PR will be approved and after approved, it should be available in the store in a few minutes!
