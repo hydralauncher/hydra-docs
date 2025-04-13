@@ -3,6 +3,7 @@
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en) version 20 or higher.
+- [Rust](https://www.rust-lang.org/tools/install).
 - [Python 3.9](https://www.python.org/downloads/release/python-3913/).
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 - [Git](https://git-scm.com/downloads).
