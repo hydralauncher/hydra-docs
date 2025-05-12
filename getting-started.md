@@ -3,7 +3,6 @@
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en) version 20 or higher.
-- [Rust](https://www.rust-lang.org/tools/install).
 - [Python 3.9](https://www.python.org/downloads/release/python-3913/).
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 - [Git](https://git-scm.com/downloads).
@@ -56,8 +55,9 @@ You have to set up a few variables in order to select which environment you are 
 | `MAIN_VITE_API_URL`                    | https://hydra-api-us-east-1.losbroxas.org | https://api-staging.hydralauncher.gg      |
 | `MAIN_VITE_AUTH_URL`                   | https://auth.hydralauncher.gg             | https://auth-staging.hydralauncher.gg     |
 | `MAIN_VITE_CHECKOUT_URL`               | https://checkout.hydralauncher.gg         | https://checkout-staging.hydralauncher.gg |
-| `MAIN_VITE_EXTERNAL_RESOURCES_URL`     | https://assets.hydralauncher.gg           | `None`                                    |
-| `RENDERER_VITE_EXTERNAL_RESOURCES_URL` | https://assets.hydralauncher.gg           | `None`                                    |
+| `MAIN_VITE_EXTERNAL_RESOURCES_URL`     | https://assets.hydralauncher.gg           | https://assets.hydralauncher.gg           |
+| `RENDERER_VITE_EXTERNAL_RESOURCES_URL` | https://assets.hydralauncher.gg           | https://assets.hydralauncher.gg           |
+| `MAIN_VITE_WS_URL`                     | wss://ws.hydralauncher.gg                 | wss://ws-staging.hydralauncher.gg         |
 
 Pick one environment to use and place the variables into a `.env` file in the root folder of the project. Like so:
 
@@ -69,6 +69,7 @@ MAIN_VITE_AUTH_URL=https://auth.hydralauncher.gg
 MAIN_VITE_CHECKOUT_URL=https://checkout.hydralauncher.gg
 MAIN_VITE_EXTERNAL_RESOURCES_URL=https://assets.hydralauncher.gg
 RENDERER_VITE_EXTERNAL_RESOURCES_URL=https://assets.hydralauncher.gg
+MAIN_VITE_WS_URL=wss://ws.hydralauncher.gg
 ```
 
 ### Which environment should you use?
